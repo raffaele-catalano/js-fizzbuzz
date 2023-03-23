@@ -10,24 +10,20 @@ for (let i = 1; i <= 100; i++) {
 
     box.classList.add('box')
     
-    let text = '' ;
-    text = i;
-
-
-    if (!(i % 3)){
+    if (!(i % 15)){
+        box.classList.add('fizzbuzz')
+        box.innerHTML = "FizzBuzz"
+    } else if (!(i % 3)){
         box.classList.add('fizz')
-        text = "Fizz"
+        box.innerHTML = "Fizz"
     } else if (!(i % 5)){
         box.classList.add('buzz')
-        text = "Buzz"
-    } 
-
-    if (!(i % 15)) {
-        box.classList.add('fizz' + 'buzz')
-        text = "FizzBuzz"
+        box.innerHTML = "Buzz"
+    } else {
+        box.classList.add(i)
+        box.innerHTML = i
+        
     }
-
-    box.append(text)
 
     container.append(box)
     }
