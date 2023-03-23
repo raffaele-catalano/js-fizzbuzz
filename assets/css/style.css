@@ -37,14 +37,17 @@ h1 {
 }
 
 .fizz {
-    background-color: lightpink;
+    background-color: #ff8194;
+    font-weight: bold;
 }
 
 .buzz {
     background-color: #ffd700;
+    font-weight: bold;
 }
 
 .fizzbuzz {
     background-color: #df3400;
+    font-weight: bold;
     color: white;
 }
